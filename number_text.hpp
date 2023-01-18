@@ -11,7 +11,7 @@ a            原数列，请初始化为 0
 template<typename T>
 void numbers(T n, T lower_limit, T upper_limit, T number_type, T *a)
 {
-	srand((unsigned)time(NULL));
+    srand((unsigned)time(NULL));
     if (number_type == 1){
         n += 1;
         int cnt = 0;
