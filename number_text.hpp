@@ -62,3 +62,19 @@ void numbers(T1 n, T1 lower_limit, T1 upper_limit, T1 number_type, T2 *a){
         }
     }
 }
+
+/*
+生成不重复数列:
+仅支持 0 ~ n
+n  数据范围0 ~ n
+a  数列
+*/
+
+template<typename T>
+void nr_numbers(T n, T *a){
+    int x;
+    for (int i = 0; i <= n; i ++){
+        while (a[x = rand() % (n + 1)]);
+        a[x] = i;
+    }
+}
