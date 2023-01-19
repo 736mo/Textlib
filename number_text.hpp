@@ -78,3 +78,18 @@ void nr_numbers(T n, T *a){
         a[x] = i;
     }
 }
+
+/*
+生成子区间:
+L  左端点
+R  右端点
+*/
+
+template<typename T>
+pair<T, T> interval(T L, T R){
+    pair<T, T> ans;
+    ans.first = integer_number(L, R);
+    ans.second = integer_number(L, R);
+    if (ans.first > ans.second) swap(ans.first, ans.second);
+    return ans;
+}
